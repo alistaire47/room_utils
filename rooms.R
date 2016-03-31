@@ -1,4 +1,3 @@
-library(magrittr)
 #' Lists all Stack Overflow chat rooms.
 #' 
 #' @param sort Desired sort order of rooms. Options: "active", "event", "people",
@@ -11,6 +10,7 @@ library(magrittr)
 #' tail(rooms('created'))
 #' head(rooms())
 #' 
+#' @importFrom magrittr "%>%"
 #' @export
 rooms <- function(sort = 'active'){
     url <- paste0('http://chat.stackoverflow.com/?tab=all&sort=', sort)
