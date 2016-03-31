@@ -35,4 +35,3 @@ rooms <- function(sort = 'active'){
     
     return(paste0('https://chat.stackoverflow.com', rooms))
 }
-
