@@ -30,11 +30,11 @@ update_user_info <- function(){
 plot_current_users <- function(){
     update_user_info()
     leaflet(user_df) %>% addProviderTiles('CartoDB.PositronNoLabels') %>% 
-        addMarkers(popup = paste0('<strong>User: </strong>', user_df$user))
+        addCircleMarkers(popup = paste0('<strong>User: </strong>', user_df$user))
 }
 
 plot_using_rworldmap <- function(){
     newmap <- getMap(resolution = "low")
     plot(newmap)
-    points(user_df$lon, user_df$lat, col = 'red', cex=2, pch=21)
+    points(user_df$lon, user_df$lat, col = 'red', cex = 2, pch = 21)
 }
