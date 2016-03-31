@@ -1,0 +1,15 @@
+Package: roomutils
+Type: Package
+Title: Some R Functions to Help in the R-Public Stack Overflow Room
+Version: 0.1
+Date: 2016-03-30
+Authors@R: c(person("Ananda", "Mahto", email = "ananda@mahto.info",
+             role = c("aut", "cre")),
+             person("Edward", "Visel", role = "aut"))
+Description: A set of functions for owners of the R-Public Stack Overflow room.
+License: Apache (== 2.0)
+RoxygenNote: 5.0.1
+Imports: rvest,
+  ggmap,
+  leaflet,
+  rworldmap
